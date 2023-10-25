@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'bold';
+    src: url('BigJohnPRO-Bold.otf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('BigJohnPRO-Light.otf');
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('BigJohnPRO-Regular.otf');
+}
+
+body {
+    background-image: url("pagode-yasaka-rue-sannen-zaka-kyoto-japon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.app {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.app h1 {
+    font-size: 50px;
+    color: rgb(165, 0, 0);
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    font-family: 'bold';
+    text-align: center;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    font-family: 'regular';
+}
+
+.btn {
+    background: #fff;
+    color: #920000;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0; 
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'regular';
+}
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+    text-shadow: 0 0 10px #ff9494, 0 0 20px #ff6969, 0 0 40px #ff4343;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: #4d0000;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
+    font-family: 'bold';
+} 
+#next-btn:hover{
+    background: #310000;
+    color: #fff;
+    text-shadow: 0 0 10px #ff9494, 0 0 20px #ff6969, 0 0 40px #ff4343;
+    color: #fff;
+
+} 
+.correct{
+    background: #9aeabc
+}
+.incorrect{
+    background: #ff9393
+}
